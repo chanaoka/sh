@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -d --name=polyverse_supervisor_1 -v /var/run/docker.sock:/var/run/docker.sock $PWD/polyverse.yml:/usr/polyverse.yml c2f5850762b27155127905ffed42592dde4d97ca -config-yaml-file=/usr/polyverse.yml
+docker run -d --name=polyverse_supervisor_1 -v /var/run/docker.sock:/var/run/docker.sock -v $PWD/polyverse.yml:/usr/polyverse.yml c2f5850762b27155127905ffed42592dde4d97ca -config-yaml-file=/usr/polyverse.yml
